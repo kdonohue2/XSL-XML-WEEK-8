@@ -62,7 +62,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:template match="video">
   <td>
-    <xsl:value-of select="video[@type=''][position() = last()]"/>
+    <xsl:value-of select="video[@type='MJPEG'][position() = last()]"/>
   </td>
 </xsl:template>
 
