@@ -59,5 +59,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:value-of select="image[@type='jpg'][position() = last()]"/>
   </td>
 </xsl:template>
+  
+  <xsl:template match="video">
+  <td>
+    <xsl:value-of select="video[@type=''][position() = last()]"/>
+  </td>
+</xsl:template>
 
 </xsl:stylesheet>
